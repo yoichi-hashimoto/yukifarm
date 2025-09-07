@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>お問い合わせ | Farm Experience Co.</title>
+  <meta name="description" content="里山での農業体験・教育旅行・企業研修プログラムを提供するFarm Experience Co.の公式サイト。">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Farm Experience Co. ホーム">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span>Farm Experience Co.</span>
+      </a>
+      <button class="mobile-toggle" aria-label="メニュー" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="#374151" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="nav"><a href="index.html" class="">トップ</a><a href="about.html" class="">会社紹介</a><a href="ceo.html" class="">代表紹介</a><a href="apply.html" class="">体験農園の申し込み</a><a href="contact.html" class="active">お問い合わせ</a></nav>
+    </div>
+  </header>
+  
+<section class="section">
+  <div class="container">
+    <h2>お問い合わせ</h2>
+    <p style="margin-top:.4rem;">取材・協業・学校向けご相談もお気軽にお送りください。</p>
+    <form class="form" action="#" method="post" onsubmit="event.preventDefault(); alert('送信テスト：デモ版ではメール送信されません。');">
+      <label for="cname">お名前</label>
+      <input id="cname" name="cname" type="text" required>
+      <label for="cemail">メールアドレス</label>
+      <input id="cemail" name="cemail" type="email" required>
+      <label for="ctopic">件名</label>
+      <input id="ctopic" name="ctopic" type="text" placeholder="例：企業研修の見積について">
+      <label for="cmsg">内容</label>
+      <textarea id="cmsg" name="cmsg" rows="6" placeholder="ご相談内容をお書きください"></textarea>
+      <div class="actions">
+        <button class="btn btn-primary" type="submit">送信</button>
+        <button class="btn btn-ghost" type="reset">クリア</button>
+      </div>
+      <small>電話：024-000-0000 / メール：info@example.com</small>
+    </form>
+  </div>
+</section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand"><span class="brand-logo"></span>Farm Experience Co.</div>
+        <p class="footer-note">自然に学び、土に触れる。地域とともに育つ体験を。</p>
+      </div>
+      <div style="justify-self:end">
+        <a href="mailto:info@example.com">info@example.com</a><br>
+        <small>© Farm Experience Co.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>

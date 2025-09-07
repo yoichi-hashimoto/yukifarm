@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>体験農園の申し込み | Farm Experience Co.</title>
+  <meta name="description" content="里山での農業体験・教育旅行・企業研修プログラムを提供するFarm Experience Co.の公式サイト。">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Farm Experience Co. ホーム">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span>Farm Experience Co.</span>
+      </a>
+      <button class="mobile-toggle" aria-label="メニュー" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="#374151" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="nav"><a href="index.html" class="">トップ</a><a href="about.html" class="">会社紹介</a><a href="ceo.html" class="">代表紹介</a><a href="apply.html" class="active">体験農園の申し込み</a><a href="contact.html" class="">お問い合わせ</a></nav>
+    </div>
+  </header>
+  
+<section class="section">
+  <div class="container">
+    <h2>体験農園のお申し込み</h2>
+    <p style="margin-top:.4rem;">以下のフォームにご入力ください。担当者より日程確認のご連絡を差し上げます。</p>
+    <form class="form" action="#" method="post" onsubmit="event.preventDefault(); alert('送信テスト：デモ版ではメール送信されません。');">
+      <div class="grid">
+        <div>
+          <label for="name">お名前</label>
+          <input id="name" name="name" type="text" placeholder="山田 太郎" required>
+        </div>
+        <div>
+          <label for="email">メールアドレス</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          <label for="date">希望日</label>
+          <input id="date" name="date" type="date" required>
+        </div>
+        <div>
+          <label for="people">人数</label>
+          <select id="people" name="people" required>
+            <option value="">選択してください</option>
+            <option>1名</option>
+            <option>2名</option>
+            <option>3〜5名</option>
+            <option>6名以上</option>
+          </select>
+        </div>
+      </div>
+      <label for="course">希望コース</label>
+      <select id="course" name="course" required>
+        <option value="">選択してください</option>
+        <option>週末ファーム（半日）</option>
+        <option>季節の栽培教室</option>
+        <option>企業向け研修</option>
+        <option>家族で収穫デー</option>
+      </select>
+      <label for="message">ご要望・備考</label>
+      <textarea id="message" name="message" rows="5" placeholder="アレルギーや小さなお子様の有無など"></textarea>
+      <div class="actions">
+        <button class="btn btn-primary" type="submit">申し込む</button>
+        <button class="btn btn-ghost" type="reset">リセット</button>
+      </div>
+      <div class="notice" role="status">※ デモ版では送信処理は行われません。実運用時はバックエンド（フォーム送信先）をご用意ください。</div>
+    </form>
+  </div>
+</section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand"><span class="brand-logo"></span>Farm Experience Co.</div>
+        <p class="footer-note">自然に学び、土に触れる。地域とともに育つ体験を。</p>
+      </div>
+      <div style="justify-self:end">
+        <a href="mailto:info@example.com">info@example.com</a><br>
+        <small>© Farm Experience Co.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
